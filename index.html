@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piattaforma Club</title>
+</head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" type="text/css" href="style.css" />
+<body>
+    
+
+    <!-- questo è il discord style navbar -->
+
+
+    <nav>
+        <a href="" class="active"><span class="tooltip">Casa</span></a>
+        <hr>
+        <a href=""><span class="tooltip">Pinco</span></a>
+        <a href=""><span class="tooltip">Pallino</span></a>
+    </nav> 
+
+
+<script>
+    const nav_links = document.querySelectorAll('a');
+    nav_links.forEach(anchor => anchor.addEventListener('click', (event) => {
+        event.preventDefault();
+        nav_links.forEach(anchor => anchor.className = '');
+        anchor.className = 'active';
+    }));
+</script>
+
+
+
+
+         <!-- questo è la box -->
+     <div id="rettangolo1"><h1> Teatro Immagine</h1></div>
+    <div id="rettangolo2"><h1>Robotica Immagine</h1></div>
+    <div id="rettangolo3"><h1>Fotografia Immagine</h1></div>
+    <div id="rettangolo4"><h1>Cineforum Immagine</h1></div>
+    <div id="rettangolo5"><h1>Danza Immagine</h1></div>
+
+
+
+
+    
+</body>
+</html>
