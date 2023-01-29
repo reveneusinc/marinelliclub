@@ -80,16 +80,16 @@ nav a {
   display: block;
   width: 48px;
   height: 48px;
-  border-radius: 50%; /* lo rende un cerchio*/
+  border-radius: 50%; /* Makes a circle */
   background: #36393f;
 }
   
 
 nav {
-  display: flex;
-  flex-direction: column; 
-  align-items: center; 
-  gap: 15px; 
+  display: flex; /* Use Flexbox */
+  flex-direction: column; /* Stack one on top of another */
+  align-items: center; /* Align horizontally */
+  gap: 15px; /* Vertical gap between the links */
   padding-top: 12px;
 }
 
@@ -99,7 +99,7 @@ nav hr {
   width: 32px;
   height: 2px;
   border-radius: 196px;
-  border: none; 
+  border: none; /* Removes a white border that exists by default */
   background: #36393f;
 }
 
@@ -126,7 +126,7 @@ nav a::after {
 
 nav a::after {
   position: absolute;
-  right: 57px; 
+  right: 57px; /* Move it 57px to the LEFT (yes, counter-intuitive!) */
   top: 50%;
   transform: translateY(-50%);
 }
@@ -162,7 +162,7 @@ nav a .tooltip {
   border-radius: 8px;
   
   display: none;
-  width: max-content; 
+  width: max-content; /* Be as wide as the text that it contains */
   
   background: #000000;
 }
